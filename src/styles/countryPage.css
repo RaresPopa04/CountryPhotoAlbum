@@ -1,0 +1,226 @@
+body{
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.faIcon path{
+    fill:currentColor;
+}
+
+.faIcon:hover path{
+    fill: currentColor;
+}
+
+.countryTitle{
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 0.5em;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fileUploadContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 2px dashed #d3d3d3;
+    border-radius: 5px;
+    position: relative; 
+
+    width: 50%;
+    height: auto;
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: bold;
+    overflow: hidden;
+
+    transition: background-color 0.3s,color 0.3s;
+}
+
+.fileUploadContainer:hover{
+    background-color: #007BFF;
+    color: white;
+}
+
+.fileUploadLabel{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+
+}
+
+.fileUploadInput {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2em;
+    gap:50px;
+}
+
+.selectedImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 2em;
+}
+
+.selectedImages img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+form .submitBtn{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form .submitBtn:hover{
+    background-color: #0056b3;
+}
+
+.errorContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2em;
+
+}
+.errorContainer h2{
+    color: red;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.backBtn{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 2em;
+}
+
+.galleryElement{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    
+}
+
+.galleryElement img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.galleryElement .deleteBtn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 5px;
+    color: black;
+    background-color: rgba(245, 222, 179, 0);
+    border: none;
+
+    cursor: pointer;
+
+    
+}
+
+.viewBigPhotos{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.viewBigPhotos img{
+    width: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.viewBigPhotos .faClose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+
+}
+
+.faNextPhoto{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+
+    transition: color 0.3s;
+}
+
+.faNextPhoto:hover, .faClose:hover{
+    color: #007BFF;
+}
+

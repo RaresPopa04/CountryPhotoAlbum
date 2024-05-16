@@ -1,0 +1,41 @@
+
+
+.popup-box{
+    visibility: hidden;
+    background-color: white;
+    position: fixed;
+    border: 1px solid black;
+    padding: 10px;
+    z-index: 1000;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+.popup-box h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.popup-box .correctBtn{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.popup-box .wrongBtn{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
